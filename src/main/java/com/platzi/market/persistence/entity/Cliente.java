@@ -8,7 +8,7 @@ import java.util.List;
 public class Cliente {
 
     @Id
-    private int id;
+    private String id;
     private String nombre;
     private String apellidos;
     private Long celular;
@@ -20,11 +20,11 @@ public class Cliente {
     @OneToMany(mappedBy = "cliente")
     private List<Compra> compras;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
